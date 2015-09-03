@@ -60,6 +60,11 @@ class MLEmoticonController: UIViewController {
         toolBar.ml_AlignInner(type: ml_AlignType.BottomCenter, referView: view, size: CGSize(width: UIScreen.mainScreen().bounds.width, height: 49))
         emoticonView.ml_AlignInner(type: ml_AlignType.TopLeft, referView: view, size: nil)
         emoticonView.ml_AlignVertical(type: ml_AlignType.TopRight, referView: toolBar, size: nil)
+        emoticonView.ml_AlignHorizontal(type: ml_AlignType.CenterCenter, referView: view, size: nil, offset: nil);
+        emoticonView.ml_AlignVertical(type: ml_AlignType.CenterCenter, referView: view, size: nil, offset: nil);
+        emoticonView.ml_Fill(view, insets: nil);
+        emoticonView.ml_HorizontalTile([view], insets: nil);
+        emoticonView.ml_VerticalTile([view], insets: nil);
 
     }
     /// 准备toolBar
